@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>设置颜色</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #div0{
+            float: left;}
+        #div1{
+            width:100px;
+            height: 100px;
+            border: 5px solid #999;
+            margin: 30px;
+            float: left;
+        }
+        #div2{
+            width: 100%;
+            height: 900px;
+            position: relative;
+            display: none;
+        }
+        #div3{
+            width: 100%;
+            height: 900px;
+            background: #666;
+            filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
+        }
+        #div4{
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 200px;
+            left: 400px;
+            border: 25px solid lightgray;
+            background: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        #div4 li{
+            list-style: none;
+            margin-bottom:8px;
+        }
+        #div4 span{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            margin: 0 5px;
+            line-height: 30px;
+            text-align: center;
+            
+        }
+        #red{
+            background: palevioletred;
+            color: #ffffff;
+        }
+        #yellow{
+            background: #ffd410;
+            color: #ffffff;
+        }
+        #blue{
+            background: lightblue;
+            color: #ffffff;
+        }
+        .px span{
+            border: 1px solid #bbbbbb;
+            color: #666;
+            background: white;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oDiv1=document.getElementById('div1');
+            var osBtn=document.getElementById('setBtn');
+            var oDiv2=document.getElementById('div2');
+            var ocBtn=document.getElementById('close');
+            var oRed=document.getElementById('red');
+            var oYellow=document.getElementById('yellow');
+            var oBlue=document.getElementById('blue');
+            var oSpan1=document.getElementById('span1');
+            var oSpan2=document.getElementById('span2');
+            var oSpan3=document.getElementById('span3');
+            var oSpan4=document.getElementById('span4');
+            var oSpan5=document.getElementById('span5');
+            var oSpan6=document.getElementById('span6');
+            var oReset=document.getElementById('reset');
+            osBtn.onclick=function(){
+                oDiv2.style.display='block';
+            };
+            ocBtn.onclick=function(){
+                oDiv2.style.display='none';
+            };
+            oRed.onmouseover=function(){
+                oRed.style.background='red';
+                oRed.style.color='black';
+            };
+            oYellow.onmouseover=function(){
+                oYellow.style.background='orange';
+                oYellow.style.color='black';
+            };
+            oBlue.onmouseover=function(){
+                oBlue.style.background='dodgerblue';
+                oBlue.style.color='black';
+            };
+            oRed.onmouseout=function(){
+                oRed.style.background='palevioletred';
+                oRed.style.color='white';
+            };
+            oYellow.onmouseout=function(){
+                oYellow.style.background='#ffd410';
+                oYellow.style.color='white';
+            };
+            oBlue.onmouseout=function(){
+                oBlue.style.background='lightblue';
+                oBlue.style.color='white';
+            };
+            oSpan1.onmouseover =function(){
+                oSpan1.style.background='orange';
+                oSpan1.style.color='black';
+                oSpan1.style.border='1px solid black';
+            };
+
+            oSpan1.onmouseout =function(){
+                oSpan1.style.background='white';
+                oSpan1.style.color='#666666';
+                oSpan1.style.border='1px solid #bbbbbb';
+            };
+            oSpan2.onmouseover =function(){
+                oSpan2.style.background='orange';
+                oSpan2.style.color='black';
+                oSpan2.style.border='1px solid black';
+            };
+
+            oSpan2.onmouseout =function(){
+                oSpan2.style.background='white';
+                oSpan2.style.color='#666666';
+                oSpan2.style.border='1px solid #bbbbbb';
+            };
+            oSpan3.onmouseover =function(){
+                oSpan3.style.background='orange';
+                oSpan3.style.color='black';
+                oSpan3.style.border='1px solid black';
+            };
+
+            oSpan3.onmouseout =function(){
+                oSpan3.style.background='white';
+                oSpan3.style.color='#666666';
+                oSpan3.style.border='1px solid #bbbbbb';
+            };
+            oSpan4.onmouseover =function(){
+                oSpan4.style.background='orange';
+                oSpan4.style.color='black';
+                oSpan4.style.border='1px solid black';
+            };
+
+            oSpan4.onmouseout =function(){
+                oSpan4.style.background='white';
+                oSpan4.style.color='#666666';
+                oSpan4.style.border='1px solid #bbbbbb';
+            };
+            oSpan5.onmouseover =function(){
+                oSpan5.style.background='orange';
+                oSpan5.style.color='black';
+                oSpan5.style.border='1px solid black';
+            };
+
+            oSpan5.onmouseout =function(){
+                oSpan5.style.background='white';
+                oSpan5.style.color='#666666';
+                oSpan5.style.border='1px solid #bbbbbb';
+            };
+            oSpan6.onmouseover =function(){
+                oSpan6.style.background='orange';
+                oSpan6.style.color='black';
+                oSpan6.style.border='1px solid black';
+            };
+
+            oSpan6.onmouseout =function(){
+                oSpan6.style.background='white';
+                oSpan6.style.color='#666666';
+                oSpan6.style.border='1px solid #bbbbbb';
+            };
+            oRed.onclick=function(){
+                oDiv1.style.background='red';
+            };
+            oYellow.onclick=function(){
+                oDiv1.style.background='orange';
+            };
+            oBlue.onclick=function(){
+                oDiv1.style.background='dodgerblue';
+            };
+            oSpan1.onclick=function(){
+                oDiv1.style.width='200px';
+            };
+            oSpan2.onclick=function(){
+                oDiv1.style.width='300px';
+            };
+            oSpan3.onclick=function(){
+                oDiv1.style.width='400px';
+            };
+            oSpan4.onclick=function(){
+                oDiv1.style.height='200px';
+            };
+            oSpan5.onclick=function(){
+                oDiv1.style.height='300px';
+            };
+            oSpan6.onclick=function(){
+                oDiv1.style.height='400px';
+            };
+            oReset.onclick=function(){
+                oDiv1.style.width='100px';
+                oDiv1.style.height='100px';
+                oDiv1.style.background='white';
+            };
+        }
+    </script>
+</head>
+<body>
+    <div id="div0">
+        <form>
+            请为下面的DIV设置样式：<input id="setBtn" type="button" value="点击设置"/>
+        </form>
+        <div id="div1"></div>
+    </div>
+    <div id="div2">
+        <div id="div3"></div>
+        <div id="div4">
+            <ul>
+                <li>请选择背景色：<span id="red">红</span><span id="yellow">黄</span><span id="blue">蓝</span></li>
+                <li class="px">请选择宽(px)：<span id="span1">200</span><span id="span2">300</span><span id="span3">400</span></li>
+                <li class="px">请选择高(px)：<span id="span4">200</span><span id="span5">300</span><span id="span6">400</span></li>
+            </ul>
+            <form>
+                <input id="reset" type="button" value="恢复"/>
+                <input id="close" type="button" value="确定"/>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
