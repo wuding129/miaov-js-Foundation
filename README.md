@@ -1,2 +1,2 @@
 # mvTest-javascript
-#һЩJavaScript��ϰ
+一些JavaScript练习
