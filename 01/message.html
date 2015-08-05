@@ -11,12 +11,12 @@
             border: 3px solid #999999;
             padding: 10px;
         }
-        .left{
+        /*.left{
             text-align: left;
         }
         .right{
             text-align: right;
-        }
+        }*/
     </style>
     <script>
         window.onload= function () {
@@ -24,8 +24,10 @@
             var oImg1=document.getElementById('img1');
             var oText1=document.getElementById('text1');
             var oBtn1=document.getElementById('sendBtn');
+            var arr1=[];
+            var arr2=[];
             oBtn1.onclick= function () {
-                oDiv1.innerHTML += oText1.value + '<br/>';
+                oDiv1.innerHTML += '<div></div>> ' + '<br/>';
                 oText1.value = '';
             } ;
             var onOff=true;
@@ -33,11 +35,11 @@
                 if (onOff == true) {
                     oImg1.src = 'imgs/711.png';
                     onOff = false;
-                    oDiv1.className='left';
+                    //oDiv1.className='left';
                 } else {
                     oImg1.src = 'imgs/bee.jpg';
                     onOff = true;
-                    oDiv1.className='right';
+                    //oDiv1.className='right';
                 }
             };
         };
@@ -45,7 +47,7 @@
 </head>
 <body>
 <div id="div1"></div>
-<img id="img1" src="imgs/711.png" alt="711"/>
+<img id="img1" src="imgs/711.png" alt=""/>
 <input id="text1" type="text" value=""/>
 <input id="sendBtn" type="button" value="发送"/>
 </body>

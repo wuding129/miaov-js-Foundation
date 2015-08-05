@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p,img,ul{
+            padding: 0;
+            margin: 0;
+        }
+        #div1 {
+            width: 500px;
+            height: 600px;
+            border: 1px solid red;
+            background: #d8e6e1;
+            font-size: 12px;
+        }
+        img{
+            width: 200px;
+            height: 150px;
+            float: left;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            float: left;
+        }
+        .litle img{
+            width: 10px;
+            height: 75px;
+        }
+        .litle h1{
+            font-size: 15px;
+        }
+        .big img{
+            width: 200px;
+            height: 150px;
+        }
+        .big h1{
+            font-size: 20px;
+        }
+        .list h1{
+            display: none;
+        }
+        .list img{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            var oBig=document.getElementById('big');
+            var oLittle=document.getElementById('big');
+            var oList=document.getElementById('big');
+            var oUl1=document.getElementById('ul1');
+            oBig.onclick=function(){
+                oUl1.className='.big';
+            };
+            oLittle.onclick=function(){
+                oUl1.className='.little';
+            };
+            oList.onclick=function(){
+                oUl1.className='.list';
+            };
+        };
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <input id="big" type="button" value="大图展示"/>
+        <input id="little" type="button" value="小图展示"/>
+        <input id="list" type="button" value="列表展示"/>
+        <div id="div2">
+            <ul id="ul1">
+                <li>
+                    <img src="imgs/1.jpg" alt=""/><h2>安徽饭店</h2><p>发的撒附近的刷卡缴费的快速了减肥了咖啡的睡觉奥开了房间的顺口溜</p>
+                </li>
+                <li>
+                    <img src="imgs/2.jpg" alt=""/><h2>安徽饭店</h2><p>发的撒附近的刷卡缴费的快速了减肥了咖啡的睡觉奥开了房间的顺口溜</p>
+
+                </li>
+                <li>
+                    <img src="imgs/3.jpg" alt=""/><h2>安徽饭店</h2><p>发的撒附近的刷卡缴费的快速了减肥了咖啡的睡觉奥开了房间的顺口溜</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
